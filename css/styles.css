@@ -1,0 +1,24 @@
+
+:root{
+  --bg: #f3f6f4;
+  --card: #ffffff;
+  --muted: #6b6f6b;
+  --accent: #7b8b2f; /* olive military */
+  --accent-2: #d4af37; /* golden */
+}
+[data-theme="dark"]{
+  --bg: #0f1720;
+  --card: #0b1220;
+  --muted: #9aa0a6;
+}
+body{ background:var(--bg); font-family: Inter, system-ui, Arial; color: #111; }
+.navbar{ background: linear-gradient(90deg, rgba(12,25,9,1), rgba(23,40,18,1)); color: white; }
+.navbar .navbar-brand{ color: var(--accent-2); }
+.card{ background:var(--card); border-radius:12px; box-shadow: 0 6px 18px rgba(11,12,12,0.08); }
+.table thead th{ background: rgba(0,0,0,0.03); font-weight:600; }
+.btn-success{ background: var(--accent); border: none; }
+.btn-success:hover{ background: #6b7a28; }
+.container h2, .container h3{ color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.2); }
+#summary .card{ padding:18px; }
+.leader { font-weight:700; color:var(--accent-2); }
+@media (max-width:700px){ .container{padding:0 12px;} }
